@@ -17,9 +17,9 @@ public class Triangel  {
     
     public Triangel(double a, double b, double c, double h) {
         this.a = a;
-        this.b= b;
-        this.c= c;
-        this.h= h;
+        this.b = b;
+        this.c = c;
+        this.h = h;
         
     }
 
