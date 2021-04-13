@@ -42,11 +42,13 @@ public class TriangelTest {
     @Test
     public void testArea() {
         System.out.println("area");
-        double len = 0.0;
-        double height = 0.0;
+        double a = 0.0;
+        double b = 0.0;
+        double c = 0.0;
+        double h = 0.0;
         Triangel instance = null;
         double expResult = 0.0;
-        double result = instance.area(len, height);
+        double result = instance.area(a, b, c, h);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -58,11 +60,13 @@ public class TriangelTest {
     @Test
     public void testOmkrets() {
         System.out.println("omkrets");
-        double len = 0.0;
-        double height = 0.0;
+        double a = 0.0;
+        double b = 0.0;
+        double c = 0.0;
+        double h = 0.0;
         Triangel instance = null;
         double expResult = 0.0;
-        double result = instance.omkrets(len, height);
+        double result = instance.omkrets(a , b , c, h);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
