@@ -19,12 +19,12 @@ public class Triangel implements Geometri {
 
     @Override
     public double area(double len, double height) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (len * height) /2;
     }
 
     @Override
     public double omkrets(double len, double height) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return (len * 2 + height);
     }
     
 }
