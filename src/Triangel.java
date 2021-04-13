@@ -9,6 +9,13 @@
  * @author denej
  */
 public class Triangel implements Geometri {
+    double len;
+    double height;
+    
+    public Triangel(double len, double height) {
+        this.len = len;
+        this.height = height;
+    }
 
     @Override
     public double area(double len, double height) {

@@ -9,15 +9,24 @@
  * @author denej
  */
 public class Rektangel implements Geometri {
+    double len;
+    double height;
+    
+    public Rektangel(double len, double height){
+        this.len = len;
+        this.height = height;
+    }
 
     @Override
     public double area(double len, double height) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double area = len * height;
+        return area;
     }
 
     @Override
     public double omkrets(double len, double height) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        double omkrets = len + len + height + height;
+        return omkrets;
     }
     
 }

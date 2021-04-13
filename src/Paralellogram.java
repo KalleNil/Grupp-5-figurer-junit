@@ -9,6 +9,13 @@
  * @author denej
  */
 public class Paralellogram implements Geometri {
+    double len;
+    double height;
+    
+    public Paralellogram(double len, double height) {
+        this.len = len;
+        this.height = height;
+    }
 
     @Override
     public double area(double len, double height) {
