@@ -9,7 +9,7 @@
  * @author denej
  */
 public interface Geometri {
-    public double area();
-    public double omkrets();
+    public double area(double len, double height);
+    public double omkrets(double len, double height);
     
 }
