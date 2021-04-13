@@ -20,8 +20,8 @@ public class Triangel implements Geometri {
     }
 
     @Override
-    public double area(double base, double height) {
-        double area = base * height;
+    public double area(double len, double height) {
+        double area = len* height;
         return area;
     }
 
