@@ -45,6 +45,7 @@ public class KonTest {
         float radius = 0.0F;
         float height = 0.0F;
         float slant_height = 0.0F;
+        Kon instance = null;
         float expResult = 0.0F;
         float result = Kon.slantHeight(radius, height, slant_height);
         assertEquals(expResult, result, 0.0);
@@ -61,6 +62,7 @@ public class KonTest {
         float radius = 0.0F;
         float height = 0.0F;
         float slant_height = 0.0F;
+        Kon instance = null;
         float expResult = 0.0F;
         float result = Kon.volume(radius, height, slant_height);
         assertEquals(expResult, result, 0.0);
@@ -77,6 +79,7 @@ public class KonTest {
         float radius = 0.0F;
         float height = 0.0F;
         float slant_height = 0.0F;
+        Kon instance = null;
         float expResult = 0.0F;
         float result = Kon.surfaceArea(radius, height, slant_height);
         assertEquals(expResult, result, 0.0);
