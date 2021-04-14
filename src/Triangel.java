@@ -8,26 +8,28 @@
  *
  * @author denej
  */
-public class Triangel implements Geometri {
-    double len;
-    double height;
+public class Triangel  {
+    double a;
+    double b;
+    double c;
+    double h;
     
     
-    public Triangel(double len, double height) {
-        this.len = len;
-        this.height = height;
+    public Triangel(double a, double b, double c, double h) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.h = h;
         
     }
 
-    @Override
-    public double area(double len, double height) {
-        double area = len* height / 2;
+    public double area(double a, double b, double c, double h) {
+        double area = b * h / 2;
         return area;
     }
 
-    @Override
-    public double omkrets(double base, double height) {
-        double omkrets = len + len + len;
+    public double omkrets(double a, double b, double c, double h) {
+        double omkrets = a + b + c;
         return omkrets;
     }
 

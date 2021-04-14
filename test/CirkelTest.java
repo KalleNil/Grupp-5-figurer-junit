@@ -13,11 +13,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author denej
+ * @author najma
  */
-public class TriangelTest {
+public class CirkelTest {
     
-    public TriangelTest() {
+    public CirkelTest() {
     }
     
     @BeforeAll
@@ -37,36 +37,34 @@ public class TriangelTest {
     }
 
     /**
-     * Test of area method, of class Triangel.
+     * Test of area method, of class Rektangel.
      */
     @Test
     public void testArea() {
         System.out.println("area");
-        double a = 0.0;
-        double b = 0.0;
-        double c = 0.0;
-        double h = 0.0;
-        Triangel instance = null;
+        double len = 0.0;
+        double height = 0.0;
+        Cirkel c = new Cirkel(2);
+        Cirkel instance = c;
         double expResult = 0.0;
-        double result = instance.area(a, b, c, h);
+        double result = instance.area(len, height);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
     }
 
     /**
-     * Test of omkrets method, of class Triangel.
+     * Test of omkrets method, of class Rektangel.
      */
     @Test
     public void testOmkrets() {
         System.out.println("omkrets");
-        double a = 0.0;
-        double b = 0.0;
-        double c = 0.0;
-        double h = 0.0;
-        Triangel instance = null;
+        double len = 0.0;
+        double height = 0.0;
+        Cirkel c = new Cirkel(2);
+        Cirkel instance = c;
         double expResult = 0.0;
-        double result = instance.omkrets(a , b , c, h);
+        double result = instance.omkrets(len, height);
         assertEquals(expResult, result, 0.0);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
