@@ -24,7 +24,7 @@ public class Kon {
      //Räkna konens sida "slant height" med s = math.sqrt (r^2 + h^2)
      //Använder pythagoras sats 
      public static float slantHeight (float radius, float height, float slant_height, float pi) {
-         
+         //Konvertera Math.sqrt till float (float) Math.sqrt
          return slant_height = (float) Math.sqrt(radius * radius + height * height);
      }
      //Räkna ut volym på konen volym = 1/3 (pi * r * r * h)
