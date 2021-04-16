@@ -46,6 +46,7 @@ public class KonTest {
      */
     @Test
     public void testVolume() {
+        System.out.println("testVolum");
         Kon testKon = new Kon(2, 4);
         float expResult = 16.75514793395996F;
         float result = testKon.volume();
