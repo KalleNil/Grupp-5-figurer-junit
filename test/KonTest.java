@@ -60,7 +60,6 @@ public class KonTest {
     @Test
     public void testSlantHeight() {
         System.out.println("slantHeight");
-        
         Kon testKon = new Kon(2, 4);
         float expResult = 4.4721360206604F;
         float result = testKon.slantHeight();
@@ -74,9 +73,9 @@ public class KonTest {
     @Test
     public void testSurfaceArea() {
         System.out.println("surfaceArea");
-        Kon instance = new Kon(2, 4);
+        Kon testkon = new Kon(2, 4);
         float expResult = 40.66559600830078F;
-        float result = instance.surfaceArea();
+        float result = testkon.surfaceArea();
         assertEquals(expResult, result, 0.0);
         
     }
