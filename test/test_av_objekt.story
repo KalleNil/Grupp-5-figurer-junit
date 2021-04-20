@@ -28,3 +28,8 @@ Then volym borde vara 125 och mantelarea 500
 When basen är 8 och höjden är 8 och djupen är 8
 Then volym borde bara 512 och mantelarea 2048 
 
+Given en kon
+When radie är 3 och höjden är 6
+Then sidhöj borde vara 40 och volym 56.52 och ytan är 10648,37
+when radie är 6 och höjden 8
+Then sidhöjd borde vara 73 och volym 301.44 och 155466.17
