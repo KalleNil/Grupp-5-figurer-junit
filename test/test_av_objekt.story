@@ -1,6 +1,6 @@
 Scenario: Testa olika figurer
 
-Given en cirkel
+Given en cirkel 
 When cirkeln har radius 3
 Then arean borde vara 28.27 och omkretsen 31.42
 

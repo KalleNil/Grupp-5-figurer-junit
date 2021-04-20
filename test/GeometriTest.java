@@ -74,5 +74,16 @@ public class GeometriTest {
             return 0.0;
         }
     }
+
+    public class GeometriImpl implements Geometri {
+
+        public double area() {
+            return 0.0;
+        }
+
+        public double omkrets() {
+            return 0.0;
+        }
+    }
     
 }

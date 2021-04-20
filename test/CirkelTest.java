@@ -42,12 +42,11 @@ public class CirkelTest {
     @Test
     public void testArea() {
         System.out.println("area");
-        Cirkel instance = null;
+        Cirkel cirkelOmkrets = new Cirkel(4);
         double expResult = 0.0;
-        double result = instance.area();
+        double result = cirkelOmkrets.area();
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -56,12 +55,11 @@ public class CirkelTest {
     @Test
     public void testOmkrets() {
         System.out.println("omkrets");
-        Cirkel instance = null;
+        Cirkel cirkelOmkrets = new Cirkel(4);
         double expResult = 0.0;
-        double result = instance.omkrets();
+        double result = cirkelOmkrets.omkrets();
         assertEquals(expResult, result, 0.0);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
