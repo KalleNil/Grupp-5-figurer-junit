@@ -15,3 +15,4 @@ When längden är 3 och höjden är 2
 Then area borde vara 6 och omkretsen är 10
 When längen är 5 och höjden är 3
 Then area borde vara 15 och omkretsen 16
+
