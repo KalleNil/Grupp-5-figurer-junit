@@ -9,10 +9,11 @@
  * @author denej
  */
 public class Paralellogram extends Figurer implements Geometri {
-    
-    public Paralellogram(double bas, double höjd) {
+    double sida;
+    public Paralellogram(double bas, double höjd, double sida) {
         this.bas = bas;
         this.höjd = höjd;
+        this.sida = sida;
     }
 
     @Override
@@ -23,7 +24,7 @@ public class Paralellogram extends Figurer implements Geometri {
 
     @Override
     public double omkrets() {
-        double omkrets = (bas * 2) + (höjd * 2);
+        double omkrets = (bas * 2) + (sida * 2);
         return omkrets;
     }
     
