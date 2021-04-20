@@ -16,3 +16,15 @@ Then area borde vara 6 och omkretsen är 10
 When längen är 5 och höjden är 3
 Then area borde vara 15 och omkretsen 16
 
+Given en pararellogram
+When basen 6 och höjden är 4 och sidan är 4
+Then area borde vara 12 och omkretsen är 28
+when längden är 8 och höjden är 3 och sidan är 6
+Then area borde vara 24 och omkretsen är 44
+
+Given en kub 
+When basen är 5 och höjden är 5 och djupen är 5
+Then volym borde vara 125 och mantelarea 500
+When basen är 8 och höjden är 8 och djupen är 8
+Then volym borde bara 512 och mantelarea 2048 
+
