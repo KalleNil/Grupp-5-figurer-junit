@@ -1,3 +1,5 @@
+package src;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -8,25 +10,23 @@
  *
  * @author denej
  */
-public class Triangel extends Figurer implements Geometri {
-	double sida;
-    double sida2;
+public class Paralellogram extends Figurer implements Geometri {
     
-    public Triangel(double bas, double sida, double sida2, double höjd) {
-    	this.bas = bas;
-    	this.höjd = höjd;
-    	this.sida = sida;
-    	this.sida2 = sida2;
+    public Paralellogram(double bas, double höjd) {
+        this.bas = bas;
+        this.höjd = höjd;
     }
 
     @Override
     public double area() {
-        double area = bas * höjd / 2;
+        double area = bas * höjd;
         return area;
     }
+
     @Override
     public double omkrets() {
-        double omkrets = bas + sida + sida2;
+        double omkrets = (bas * 2) + (höjd * 2);
         return omkrets;
     }
+    
 }

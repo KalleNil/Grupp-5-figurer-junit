@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import src.Kon;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.fail;
 

@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import src.Cirkel;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 

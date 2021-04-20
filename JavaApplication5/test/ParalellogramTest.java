@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 
+import src.Paralellogram;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
