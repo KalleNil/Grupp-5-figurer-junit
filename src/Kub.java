@@ -8,26 +8,27 @@ import java.lang.Math;
  *
  * @author denej
  */
-public class Kub {
-    double len;
-    double height;
-    double width;
+public class Kub extends treDfigurer implements Geometri{
     
-    public Kub(double len, double height, double width) {
-        this.len = len;
-        this.height = height;
-        this.width = width;
+    public Kub(double bas, double höjd, double djup) {
+        this.bas = bas;
+        this.höjd = höjd;
+        this.djup = djup;
     }
 
-    
-    public double volym(double len, double height, double width) {
-        double volym = len * height * width;
+	@Override
+	//Volym
+	public double area() {
+		double volym = bas * höjd * djup;
         return volym;
-    }
-            
-    public double mantelarea(double len, double height, double width) {
-        double volym = volym(len, height, width);
+	}
+
+
+	@Override
+	//Mantelarea
+	public double omkrets() {
+		double volym = area();
         double mantelarea = (double) Math.pow((2*volym), 2); 
         return mantelarea;
-    }
+	}
 }

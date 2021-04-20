@@ -8,31 +8,25 @@
  *
  * @author denej
  */
-public class Triangel  {
-    double a;
-    double b;
-    double c;
-    double h;
+public class Triangel extends Figurer implements Geometri {
+	double sida;
+    double sida2;
     
-    
-    public Triangel(double a, double b, double c, double h) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
-        this.h = h;
-        
+    public Triangel(double bas, double sida, double sida2, double höjd) {
+    	this.bas = bas;
+    	this.höjd = höjd;
+    	this.sida = sida;
+    	this.sida2 = sida2;
     }
 
-    public double area(double a, double b, double c, double h) {
-        double area = b * h / 2;
+    @Override
+    public double area() {
+        double area = bas * höjd / 2;
         return area;
     }
-
-    public double omkrets(double a, double b, double c, double h) {
-        double omkrets = a + b + c;
+    @Override
+    public double omkrets() {
+        double omkrets = bas + sida + sida2;
         return omkrets;
     }
-
-
-    
 }

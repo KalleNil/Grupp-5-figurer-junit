@@ -8,24 +8,22 @@
  *
  * @author denej
  */
-public class Paralellogram implements Geometri {
-    double len;
-    double height;
+public class Paralellogram extends Figurer implements Geometri {
     
-    public Paralellogram(double len, double height) {
-        this.len = len;
-        this.height = height;
+    public Paralellogram(double bas, double höjd) {
+        this.bas = bas;
+        this.höjd = höjd;
     }
 
     @Override
-    public double area(double len, double height) {
-        double area = len * height;
+    public double area() {
+        double area = bas * höjd;
         return area;
     }
 
     @Override
-    public double omkrets(double len, double height) {
-        double omkrets = len + len + height + height;
+    public double omkrets() {
+        double omkrets = (bas * 2) + (höjd * 2);
         return omkrets;
     }
     
