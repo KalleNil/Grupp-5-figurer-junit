@@ -10,10 +10,11 @@ import java.lang.Math;
  */
 public class Kub extends treDfigurer implements Geometri{
     
-    public Kub(double bas, double höjd, double djup) {
-        this.bas = bas;
-        this.höjd = höjd;
-        this.djup = djup;
+    public Kub(double a) {
+            this.bas = a;
+            this.höjd = a;
+            this.djup = a;
+
     }
 
 	@Override
