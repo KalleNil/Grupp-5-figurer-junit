@@ -19,7 +19,7 @@ Then area borde vara 15 och omkretsen 16
 Given en pararellogram
 When basen 6 och höjden är 4 och sidan är 4
 Then area borde vara 12 och omkretsen är 28
-when längden är 8 och höjden är 3 och sidan är 6
+When längden är 8 och höjden är 3 och sidan är 6
 Then area borde vara 24 och omkretsen är 44
 
 Given en kub 
@@ -31,5 +31,5 @@ Then volym borde bara 512 och mantelarea 2048
 Given en kon
 When radie är 3 och höjden är 6
 Then sidhöj borde vara 40 och volym 56.52 och ytan är 10648,37
-when radie är 6 och höjden 8
+When radie är 6 och höjden 8
 Then sidhöjd borde vara 73 och volym 301.44 och 155466.17
