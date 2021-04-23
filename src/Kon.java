@@ -10,20 +10,20 @@
  */
 public class Kon extends Cirkel {
     double height;
-    double slantheight;
+    double slantHeight;
     final double pi= 3.14;
     
      public Kon(double radius, double height) {
         super(radius);
         this.height = height;
-        this.slantheight = slantheight;
+        this.slantHeight = slantHeight;
      }
      
      //Räkna konens sida "slant height" med s = math.sqrt (r^2 + h^2)
      //Använder pythagoras sats 
-     public double slantheight() {
+     public double slantHeight() {
          //Konvertera Math.sqrt till float (float) Math.sqrt
-         return slantheight = (double) Math.sqrt(radius * radius + height * height);
+         return slantHeight = (double) Math.sqrt(radius * radius + height * height);
      }
     
      
@@ -36,6 +36,6 @@ public class Kon extends Cirkel {
      //Räkna ytan av konen med pi * r * s + pi * r^2
      public double surfaceArea() {
         
-        return pi * radius * slantheight  + pi * radius * radius;   
+        return pi * radius * slantHeight  + pi * radius * radius;   
      }
 }
