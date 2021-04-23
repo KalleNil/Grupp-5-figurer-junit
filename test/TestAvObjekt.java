@@ -105,7 +105,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testTriangel() {
-        System.out.println("Testar em triangel med basen 3 och höjden 2 och där övriga sidor är 3 respektive 4");
+        System.out.println("Testar en triangel med basen 3 och höjden 2 och där övriga sidor är 3 respektive 4");
         triangel = new Triangel(3, 2, 4, 2);
         double expArea = 3;
         System.out.println("Förväntad area: " + expArea);
@@ -124,7 +124,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testRektangel1() {
-        System.out.println("Testar en rektangel med längden 3 och höjden 2");
+        System.out.println("\nTestar en rektangel med längden 3 och höjden 2");
         rektangel = new Rektangel(3, 2);
         double expArea = 6;
         System.out.println("Förväntad area: " + expArea);
@@ -142,7 +142,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testRektangel2() {
-        System.out.println("Testar en rektangel med längden 3 och höjden 2");
+        System.out.println("\nTestar en rektangel med längden 3 och höjden 2");
         rektangel = new Rektangel(5, 3);
         double expArea = 15;
         System.out.println("Förväntad area: " + expArea);
@@ -160,7 +160,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testParalell1() {
-        System.out.println("Testar ett paralelllogram med basen 6, höjden 4 och sidan 4");
+        System.out.println("\nTestar ett paralelllogram med basen 6, höjden 4 och sidan 4");
         paralellogram = new Paralellogram(6, 4, 4);
         double expArea = 24;
         System.out.println("Förväntad area: " + expArea);
@@ -178,7 +178,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testParalell2() {
-        System.out.println("Testar ett paralelllogram med basen 8, höjden 3 och sidan 6");
+        System.out.println("\nTestar ett paralelllogram med basen 8, höjden 3 och sidan 6");
         paralellogram = new Paralellogram(8, 3, 6);
         double expArea = 24;
         System.out.println("Förväntad area: " + expArea);
@@ -196,7 +196,7 @@ public class TestAvObjekt {
      */
     @Test
     public void kub1() {
-        System.out.println("Testar en kub med sidan 5");
+        System.out.println("\nTestar en kub med sidan 5");
         kub = new Kub(5);
         double expArea = 125;
         System.out.println("Förväntad volym: " + expArea);
@@ -214,7 +214,7 @@ public class TestAvObjekt {
      */
     @Test
     public void kub2() {
-        System.out.println("Testar en kub med sidan 5");
+        System.out.println("\nTestar en kub med sidan 5");
         kub = new Kub(8);
         double expArea = 125;
         System.out.println("Förväntad volym: " + expArea);
@@ -232,7 +232,7 @@ public class TestAvObjekt {
      */
     @Test
     public void kon1() {
-        System.out.println("Testar en kon med radie 3 och höjden 6");
+        System.out.println("\nTestar en kon med radie 3 och höjden 6");
         kon = new Kon(3, 6);
         double expSlantHeight = 6.708;
         System.out.println("Förväntad slanthöjd: " + expSlantHeight);
@@ -255,7 +255,7 @@ public class TestAvObjekt {
      */
     @Test
     public void kon2() {
-        System.out.println("Testar en kon med radie 3 och höjden 6");
+        System.out.println("\nTestar en kon med radie 3 och höjden 6");
         kon = new Kon(6, 8);
         double expSlantHeight = 10;
         System.out.println("Förväntad slanthöjd: " + expSlantHeight);
