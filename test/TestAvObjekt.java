@@ -234,10 +234,10 @@ public class TestAvObjekt {
     public void kon1() {
         System.out.println("\nTestar en kon med radie 3 och höjden 6");
         kon = new Kon(3, 6);
-        double expSlantHeight = 6.700;
-        System.out.println("Förväntad slanthöjd: " + expSlantHeight);
+        double expSlantheight = 6.700;
+        System.out.println("Förväntad slanthöjd: " + expSlantheight);
         double actualSlant = kon.slantheight;
-        assertEquals(expSlantHeight, actualSlant, 0.0);
+        assertEquals(expSlantheight, actualSlant, 0.0);
         System.out.println("Faktisk slanthöjd: " + actualSlant);
         
         double expArea = 52.52;       
@@ -259,10 +259,10 @@ public class TestAvObjekt {
     public void kon2() {
         System.out.println("\nTestar en kon med radie 3 och höjden 6");
         kon = new Kon(6, 8);
-        double expSlantHeight = 10;
-        System.out.println("Förväntad slanthöjd: " + expSlantHeight);
+        double expSlantheight = 10;
+        System.out.println("Förväntad slanthöjd: " + expSlantheight);
         double actualSlant = kon.slantheight;
-        assertEquals(expSlantHeight, actualSlant, 0.0);
+        assertEquals(expSlantheight, actualSlant, 0.0);
         System.out.println("Faktisk slanthöjd: " + actualSlant);
         
         double expArea = 301.44;

@@ -16,12 +16,12 @@ public class Kon extends Cirkel {
      public Kon(double radius, double height) {
         super(radius);
         this.height = height;
-        this.slantheight = slantHeight();
+        this.slantheight = slantheight;
      }
      
      //Räkna konens sida "slant height" med s = math.sqrt (r^2 + h^2)
      //Använder pythagoras sats 
-     public double slantHeight() {
+     public double slantheight() {
          //Konvertera Math.sqrt till float (float) Math.sqrt
          return slantheight = (double) Math.sqrt(radius * radius + height * height);
      }
