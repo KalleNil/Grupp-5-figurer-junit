@@ -26,7 +26,7 @@ Then omkrets should be 9
 Scenario: Rektangel area blir basen*höjden
 och omkretsen blir basen^2+höjden^2
 Given en rektangel
-When längden är 3 och höjden är 2
+When längden är 3 och höjden är 2 
 Then area borde vara 6 och omkretsen är 10
 When längen är 5 och höjden är 3
 Then area borde vara 15 och omkretsen 16
@@ -38,7 +38,7 @@ basen^2*sida*^2
 Given ett pararellogram
 When basen 6 och höjden är 4 och sidan är 4
 Then area borde vara 12 och omkretsen är 28
-When längden är 8 och höjden är 3 och sidan är 6
+When basen är 8 och höjden är 3 och sidan är 6
 Then area borde vara 24 och omkretsen är 44
 
 Scenario: I en kub är alla sidor lika långa

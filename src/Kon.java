@@ -9,7 +9,7 @@
  * @author preec
  */
 public class Kon extends Cirkel {
-	double height;
+    double height;
     double slant_height;
     final double pi= 3.14;
     
@@ -29,8 +29,7 @@ public class Kon extends Cirkel {
      
      //Räkna ut volym på konen volym = 1/3 (pi * r * r * h)
      public double volume() {
-        
-         return 1 / 3 * (pi * height * radius * radius);
+        return 1 / 3 * (pi * height * radius * radius);
      }
      
      
