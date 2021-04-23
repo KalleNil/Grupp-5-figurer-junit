@@ -11,4 +11,5 @@
 public interface Geometri {
 	public double area(); 
     public double omkrets();
+    
 }

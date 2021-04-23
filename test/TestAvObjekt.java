@@ -195,7 +195,7 @@ public class TestAvObjekt {
      * Testar metoder för volym och mantelarea för en kub med sidan 5
      */
     @Test
-    public void kub1() {
+    public void testKub1() {
         System.out.println("\nTestar en kub med sidan 5");
         kub = new Kub(5);
         double expArea = 125;
@@ -213,7 +213,7 @@ public class TestAvObjekt {
      * Testar metoder för volym och mantelarea för en kub med sidan 8
      */
     @Test
-    public void kub2() {
+    public void testKub2() {
         System.out.println("\nTestar en kub med sidan 5");
         kub = new Kub(8);
         double expArea = 125;
@@ -231,7 +231,7 @@ public class TestAvObjekt {
      * Testar metoder för volym och mantelarea för en kon med radie 3 och höjden 6
      */
     @Test
-    public void kon1() {
+    public void testKon1() {
         System.out.println("\nTestar en kon med radie 3 och höjden 6");
         kon = new Kon(3, 6);
         double expSlantHeight = 6.7;
@@ -254,7 +254,7 @@ public class TestAvObjekt {
      * Testar metoder för volym och mantelarea för en kon med radie 6 och höjden 8
      */
     @Test
-    public void kon2() {
+    public void testKon2() {
         System.out.println("\nTestar en kon med radie 6 och höjden 8");
         kon = new Kon(6, 8);
         double expSlantHeight = 10;

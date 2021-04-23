@@ -28,6 +28,7 @@ public class Kon extends Cirkel {
     
      
      //Räkna ut volym på konen volym = 1/3 (pi * r * r * h)
+ 
      public double volume() {
         return 1 / 3 * (pi * height * radius * radius);
      }
