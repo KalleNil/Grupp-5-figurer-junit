@@ -5,61 +5,62 @@
  */
 
 
-import java.security.InvalidAlgorithmParameterException;
+
+import org.jbehave.core.annotations.AfterScenario;
 import org.jbehave.core.annotations.BeforeScenario;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.*;
 
 /**
  *
  * @author Kalle
  */
 public class CirkelSteps {
-    
-   private Cirkel cirkel;
+
    
-   public double omkretsen;
+   
+   private Cirkel cirkel;
+   private double expectedArea;
+   private double actualArea;
+   private double expectedOmkrets;
+   private double actualOmkrets;
+   
+   //public double omkretsen;
    
    
    @BeforeScenario
-   public void ÅterStällaDiamtern(){
-       omkretsen = 0;
-   } 
+   public void utskrift(){
+       System.out.println("Nytt Scenario");
+   }
+   @AfterScenario
+   public void utskriftEfter() {
+       System.out.println("Avslutar test");
+   }
     
-   @Given("en Cirkel ")
-   public void enCirkelsDiameter(){
-       Cirkel cirkel;
-       
-       
-       
+   @Given("en cirkel")
+   public void testObjekt(){
+       System.out.println("Test av cirkel");
    }
+
    
-   @When("cirkeln har radius 3")
-   public void radius(){
-       
-       Cirkel omkrets = new Cirkel(3);
-       
-       
-       
-       
-       
-       
-       
-   }
-   
-   @Then("borde return värdet vara $31.42")
-   public void omkretsenStämmer(){
-       
-       double expResult = omkretsen;
-       assertThat(omkretsen == 28.27);
-   }
-   
-   
-   
-   
-   
-   
-    
-}
+    @When("cirkeln har radius $radius")
+    public void radius(double radius){
+        this.cirkel = new Cirkel(radius);
+        actualArea = cirkel.area();
+        actualOmkrets = cirkel.omkrets();
+        System.out.println("När cirkeln har radie " + radius);
+    }
+             
+   @Then("arean borde vara $area och omkretsen $omkrets")
+   public void omkretsenStämmer(double area, double omkrets){
+        expectedArea = area;
+        expectedOmkrets = omkrets;
+        assertEquals(expectedArea, actualArea, 0.1);
+        assertEquals(expectedOmkrets, actualOmkrets, 0.1);
+        System.out.println("Då borde arean vara " + actualArea + " och omkretsen " + actualOmkrets);
+        //double expResult = omkretsen;
+        //assertEquals(expected, );
+    }
+}   

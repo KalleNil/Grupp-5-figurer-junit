@@ -4,9 +4,16 @@ avstånd mellan olika punkter och sidor som vi ska få fram
 
 Scenario: Räkna ut cirkels area pi*r^2 och omkrets pi*2r 
 alltså pi*diameter
+
 Given en cirkel 
 When cirkeln har radius 3
-Then arean borde vara 28.27 och omkretsen 31.42
+Then arean borde vara 28.26 och omkretsen 18.84
+
+When cirkeln har radius 1
+Then arean borde vara 3.14 och omkretsen 6.28
+
+When cirkeln har radius 2
+Then arean borde vara 12.57 och omkretsen 12.57
 
 Scenario: Höjden är alltid vinkelrät mot basen 
 triangels area basen*höjden/2 och omkrets addera alla sidor
@@ -35,7 +42,7 @@ When längden är 8 och höjden är 3 och sidan är 6
 Then area borde vara 24 och omkretsen är 44
 
 Scenario: I en kub är alla sidor lika långa
- area blir basen*höjden*djup och omkrets bli
+area blir basen*höjden*djup och omkrets bli
 volym^2*2
 Given en kub 
 When basen är 5 och höjden är 5 och djupen är 5
