@@ -236,7 +236,7 @@ public class TestAvObjekt {
         kon = new Kon(3, 6);
         double expSlantHeight = 6.700;
         System.out.println("Förväntad slanthöjd: " + expSlantHeight);
-        double actualSlant = kon.slant_height;
+        double actualSlant = kon.slantheight;
         assertEquals(expSlantHeight, actualSlant, 0.0);
         System.out.println("Faktisk slanthöjd: " + actualSlant);
         
@@ -261,7 +261,7 @@ public class TestAvObjekt {
         kon = new Kon(6, 8);
         double expSlantHeight = 10;
         System.out.println("Förväntad slanthöjd: " + expSlantHeight);
-        double actualSlant = kon.slant_height;
+        double actualSlant = kon.slantheight;
         assertEquals(expSlantHeight, actualSlant, 0.0);
         System.out.println("Faktisk slanthöjd: " + actualSlant);
         
@@ -271,7 +271,7 @@ public class TestAvObjekt {
         System.out.println("Faktiskt volym: " + result);        
         assertEquals(expArea, result, 0.0);
         
-        double expOmk = 155466.17;
+        double expOmk = 300.6;
         System.out.println("Förväntad mantelarea: " + expOmk);
         double result2 = kon.surfaceArea();
         System.out.println("Faktisk mantelarea: " + result2);
