@@ -56,6 +56,6 @@ sidhöjd blir radie^2*höjd^2 där volymen blir pi*radie^2*höjd/3
 och basytan blir pi*radie*sidhöjd+pi*radie^2
 Given en kon
 When radie är 3 och höjden är 6
-Then sidhöj borde vara 40 och volym 56.52 och ytan är 10648,37
+Then sidhöj borde vara 6,7 och volym 56.52 och ytan är 91.95
 When radie är 6 och höjden 8
-Then sidhöjd borde vara 73 och volym 301.44 och 155466.17
+Then sidhöjd borde vara 10 och volym 301.6 och 301.6
