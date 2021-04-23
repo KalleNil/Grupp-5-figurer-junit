@@ -239,16 +239,16 @@ public class TestAvObjekt {
         double actualSlant = kon.slantHeight();
         assertEquals(expSlantHeight, actualSlant, 0.0);
         System.out.println("Faktisk slanthöjd: " + actualSlant);
-        double expArea = 52.52;       
-        System.out.println("Förväntad volym: " + expArea);
+        double expVolume = 52.52;       
+        System.out.println("Förväntad volym: " + expVolume);
         double result = kon.volume();
         System.out.println("Faktiskt volym: " + result);        
-        assertEquals(expArea, result, 0.0);
-        double expOmk = 91.5;
-        System.out.println("Förväntad mantelarea: " + expOmk);
+        assertEquals(expVolume, result, 0.0);
+        double expsurfaceArea = 91.5;
+        System.out.println("Förväntad mantelarea: " + expsurfaceArea);
         double result2 = kon.surfaceArea();
         System.out.println("Faktisk mantelarea: " + result2);
-        assertEquals(expOmk, result2, 0.0);
+        assertEquals(expsurfaceArea, result2, 0.0);
     }
     /**
      * Testar metoder för volym och mantelarea för en kon med radie 6 och höjden 8
@@ -262,15 +262,15 @@ public class TestAvObjekt {
         double actualSlant = kon.slantHeight();
         assertEquals(expSlantHeight, actualSlant, 0.0);
         System.out.println("Faktisk slanthöjd: " + actualSlant);  
-        double expArea = 301.44;
-        System.out.println("Förväntad volym: " + expArea);
+        double expvolume = 301.44;
+        System.out.println("Förväntad volym: " + expvolume);
         double result = kon.volume();
         System.out.println("Faktiskt volym: " + result);        
-        assertEquals(expArea, result, 0.0); 
-        double expOmk = 300.6;
-        System.out.println("Förväntad mantelarea: " + expOmk);
+        assertEquals(expvolume, result, 0.0); 
+        double expsurfaceArea = 300.6;
+        System.out.println("Förväntad mantelarea: " + expsurfaceArea);
         double result2 = kon.surfaceArea();
         System.out.println("Faktisk mantelarea: " + result2);
-        assertEquals(expOmk, result2, 0.0);
+        assertEquals(expsurfaceArea, result2, 0.0);
     }
 }
