@@ -48,7 +48,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testCirkel3() {
-        System.out.println("Testar cirkel med radie 3");
+        System.out.println("\nTestar cirkel med radie 3");
         cirkel = new Cirkel(3);
         double expArea = 28.26;
         System.out.println("Förväntad area: " + expArea);
@@ -67,7 +67,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testCirkel1() {
-        System.out.println("Testar cirkel med radie 3");
+        System.out.println("\nTestar cirkel med radie 3");
         cirkel = new Cirkel(1);
         double expArea = 3.14;
         System.out.println("Förväntad area: " + expArea);
@@ -86,7 +86,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testCirkel2() {
-        System.out.println("Testar cirkel med radie 2");
+        System.out.println("\nTestar cirkel med radie 2");
         cirkel = new Cirkel(2);
         double expArea = 12.56;
         System.out.println("Förväntad area: " + expArea);
@@ -105,7 +105,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testTriangel() {
-        System.out.println("Testar en triangel med basen 3 och höjden 2 och där övriga sidor är 3 respektive 4");
+        System.out.println("\nTestar en triangel med basen 3 och höjden 2 och där övriga sidor är 3 respektive 4");
         triangel = new Triangel(3, 2, 4, 2);
         double expArea = 3;
         System.out.println("Förväntad area: " + expArea);
