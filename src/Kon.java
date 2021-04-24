@@ -30,13 +30,16 @@ public class Kon extends Cirkel {
      //Räkna ut volym på konen volym = 1/3 (pi * r * r * h)
  
      public double volume() {
-        return 1 / 3 * (pi * height * radius * radius);
+        return pi * (radius * radius) * height /3;
      }
      
      
      //Räkna ytan av konen med pi * r * s + pi * r^2
+     //Update den totala ytan av konen = pi*r(r+sqrt(h^2+r^2))
+     
      public double surfaceArea() {
         
-        return pi * radius * slantHeight  + pi * radius * radius;   
+         return pi*radius*(radius+Math.sqrt(height*height+radius*radius));
+        //return pi * radius * slantHeight  + pi * radius * radius;   
      }
 }

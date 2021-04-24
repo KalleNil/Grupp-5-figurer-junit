@@ -223,7 +223,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testKub2() {
-        System.out.println("\nTestar en kub med sidan 5");
+        System.out.println("\nTestar en kub med sidan 8");
         kub = new Kub(8);
         double expArea = 125;
         System.out.println("Förväntad volym: " + expArea);
@@ -257,9 +257,9 @@ public class TestAvObjekt {
         assertEquals(expVolume, resultVolume, 0.0);
         
         double expsurfaceArea = 91.5;
-        System.out.println("Förväntad mantelarea: " + expsurfaceArea);
+        System.out.println("Förväntad basytan: " + expsurfaceArea);
         double resultSurfaceArea = kon.surfaceArea();
-        System.out.println("Faktisk mantelarea: " + resultSurfaceArea);
+        System.out.println("Faktisk basytan: " + resultSurfaceArea);
         assertEquals(expsurfaceArea, resultSurfaceArea, 0.0);
     }
     /**
@@ -282,9 +282,9 @@ public class TestAvObjekt {
         assertEquals(expvolume, resultVolume, 0.0);
         
         double expsurfaceArea = 300.6;
-        System.out.println("Förväntad mantelarea: " + expsurfaceArea);
+        System.out.println("Förväntad basytan: " + expsurfaceArea);
         double resultSurfaceArea = kon.surfaceArea();
-        System.out.println("Faktisk mantelarea: " + resultSurfaceArea);
+        System.out.println("Faktisk basytan: " + resultSurfaceArea);
         assertEquals(expsurfaceArea, resultSurfaceArea, 0.0);
     }
 }
