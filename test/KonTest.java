@@ -44,7 +44,7 @@ public class KonTest {
     public void testSlantHeight() {
         System.out.println("\nslantHeight");
         kon = new Kon(3, 6);
-        double expSlantHeight = 7.0;
+        double expSlantHeight = 6.708203932499369;
         System.out.println("Förväntad slanthöjd: " + expSlantHeight);
         double resultSlantHeight = kon.slantHeight();
         System.out.println("Faktisk slanthöjd: " + resultSlantHeight);
@@ -60,7 +60,7 @@ public class KonTest {
     public void testVolume() {
         System.out.println("\nvolume");
         kon  = new Kon(3, 6);
-        double expVolume = 55.56;
+        double expVolume = 56.52;
         System.out.println("Förväntad volym: " + expVolume);
         double resultVolume = kon.volume();
         System.out.println("Faktiskt volym: " + resultVolume);
@@ -76,12 +76,57 @@ public class KonTest {
     public void testSurfaceArea() {
         System.out.println("\nsurfaceArea");
         kon = new Kon(3, 6);
-        double expSurfaceArea = 90.90;
-        System.out.println("Förväntad slanthöjd: " + expSurfaceArea);
+        double expSurfaceArea = 91.45128104414405;
+        System.out.println("Förväntad basyta: " + expSurfaceArea);
         double result = kon.surfaceArea();
         System.out.println("Faktisk basytan: " + result);
         assertEquals(expSurfaceArea, result, 0.0);
         
     }
+    
+    @Test
+    public void testSlantHeight1() {
+        System.out.println("\nslantHeight");
+        kon = new Kon(6, 8);
+        double expSlantHeight = 10.0;
+        System.out.println("Förväntad slanthöjd: " + expSlantHeight);
+        double resultSlantHeight = kon.slantHeight();
+        System.out.println("Faktisk slanthöjd: " + resultSlantHeight);
+        assertEquals(expSlantHeight, resultSlantHeight, 0.0);
+        
+        
+    }
+
+    /**
+     * Test of volume method, of class Kon.
+     */
+    @Test
+    public void testVolume1() {
+        System.out.println("\nvolume");
+        kon  = new Kon(6, 8);
+        double expVolume = 301.44;
+        System.out.println("Förväntad volym: " + expVolume);
+        double resultVolume = kon.volume();
+        System.out.println("Faktiskt volym: " + resultVolume);
+        assertEquals(expVolume, resultVolume, 0.0);
+        
+        
+    }
+
+    /**
+     * Test of surfaceArea method, of class Kon.
+     */
+    @Test
+    public void testSurfaceArea1() {
+        System.out.println("\nsurfaceArea");
+        kon = new Kon(6, 8);
+        double expSurfaceArea = 301.44;
+        System.out.println("Förväntad basyta: " + expSurfaceArea);
+        double result = kon.surfaceArea();
+        System.out.println("Faktisk basytan: " + result);
+        assertEquals(expSurfaceArea, result, 0.0);
+        
+    }
+    
     
 }
