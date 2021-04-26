@@ -16,20 +16,26 @@ public class Kub extends treDfigurer implements Geometri{
             this.djup = a;
 
     }
-
-	@Override
-	//Volym
-	public double area() {
-		double volym = bas * höjd * djup;
+    /**
+     * Räknar ut volymen av kuben
+     * @return double
+     */
+    @Override
+    //Volym
+    public double area() {
+    	double volym = bas * höjd * djup;
         return volym;
-	}
+    }
 
-
-	@Override
-	//Mantelarea
-	public double omkrets() {
-		double volym = area();
+    /**
+     * Räknar ut mantelarean av kuben
+     * @return double
+     */
+    @Override
+    //Mantelarea
+    public double omkrets() {
+	double volym = area();
         double mantelarea = (double) Math.pow((2*volym), 2); 
         return mantelarea;
-	}
+    }
 }

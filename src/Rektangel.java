@@ -15,12 +15,20 @@ public class Rektangel extends Figurer implements Geometri {
         this.höjd = höjd;
     }
 
+    /**
+     * Räknar ut area på rektangeln
+     * @return double
+     */
     @Override
     public double area() {
         double area = bas * höjd;
         return area;
     }
-
+    
+    /**
+     * Räknar ut omkrets på rektangeln
+     * @return double
+     */
     @Override
     public double omkrets() {
         double omkrets = (bas * 2) + (höjd * 2);

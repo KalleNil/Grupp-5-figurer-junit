@@ -18,12 +18,19 @@ public class Triangel extends Figurer implements Geometri {
     	this.sida = sida;
     	this.sida2 = sida2;
     }
-
+    /**
+     * Räknar ut area på triangeln
+     * @return double
+     */
     @Override
     public double area() {
         double area = bas * höjd / 2;
         return area;
     }
+    /**
+     * Räknar ut omkrets på triangeln
+     * @return double
+     */
     @Override
     public double omkrets() {
         double omkrets = bas + sida + sida2;

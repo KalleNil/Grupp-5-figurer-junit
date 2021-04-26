@@ -18,12 +18,19 @@ public class Cirkel implements Geometri {
         
     }
     
-    
+    /**
+     * Räknar ut area beroende på vad cirkeln har för radie
+     * @return double
+     */
     @Override
     public double area() {
         return  3.14 * (this.radius * this.radius);//To change body of generated methods, choose Tools | Templates.
     }
 
+    /**
+     * Räknar ut omkrets beroende på vad cirkeln har för radie
+     * @return double
+     */
     @Override
     public double omkrets() {
         return 2 * 3.14 * this.radius; //To change body of generated methods, choose Tools | Templates.
