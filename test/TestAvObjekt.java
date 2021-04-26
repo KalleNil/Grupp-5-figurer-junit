@@ -277,7 +277,7 @@ public class TestAvObjekt {
         assertEquals(expVolume, resultVolume, 0.0);
         
         double expsurfaceArea = 91.45128104414405;
-        System.out.println("Förväntad basytan: " + expsurfaceArea);
+        System.out.println("Förväntade basytan: " + expsurfaceArea);
         double resultSurfaceArea = kon.surfaceArea();
         System.out.println("Faktisk basytan: " + resultSurfaceArea);
         assertEquals(expsurfaceArea, resultSurfaceArea, 0.0);
