@@ -210,7 +210,7 @@ public class TestAvObjekt {
         double expArea = 24;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = paralellogram.area();
-        System.out.println("Faktiskt area: " + resultArea);        
+        System.out.println("Faktisk area: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 28;
@@ -229,7 +229,7 @@ public class TestAvObjekt {
         double expArea = 125;
         System.out.println("Förväntad volym: " + expArea);
         double resultArea = kub.area();
-        System.out.println("Faktiskt volym: " + resultArea);        
+        System.out.println("Faktisk volym: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 62500.0;
@@ -248,7 +248,7 @@ public class TestAvObjekt {
         double expArea = 512.0;
         System.out.println("Förväntad volym: " + expArea);
         double resultArea = kub.area();
-        System.out.println("Faktiskt volym: " + resultArea);        
+        System.out.println("Faktisk volym: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 1048576.0;
@@ -273,13 +273,13 @@ public class TestAvObjekt {
         double expVolume = 56.52;       
         System.out.println("Förväntad volym: " + expVolume);
         double resultVolume = kon.volume();
-        System.out.println("Faktiskt volym: " + resultVolume);        
+        System.out.println("Faktisk volym: " + resultVolume);        
         assertEquals(expVolume, resultVolume, 0.0);
         
         double expsurfaceArea = 91.45128104414405;
         System.out.println("Förväntade basytan: " + expsurfaceArea);
         double resultSurfaceArea = kon.surfaceArea();
-        System.out.println("Faktisk basytan: " + resultSurfaceArea);
+        System.out.println("Faktiska basytan: " + resultSurfaceArea);
         assertEquals(expsurfaceArea, resultSurfaceArea, 0.0);
     }
     /**
@@ -298,13 +298,13 @@ public class TestAvObjekt {
         double expvolume = 301.44;
         System.out.println("Förväntad volym: " + expvolume);
         double resultVolume = kon.volume();
-        System.out.println("Faktiskt volym: " + resultVolume);        
+        System.out.println("Faktisk volym: " + resultVolume);        
         assertEquals(expvolume, resultVolume, 0.0);
         
         double expsurfaceArea = 301.44;
-        System.out.println("Förväntad basytan: " + expsurfaceArea);
+        System.out.println("Förväntad basyta: " + expsurfaceArea);
         double resultSurfaceArea = kon.surfaceArea();
-        System.out.println("Faktisk basytan: " + resultSurfaceArea);
+        System.out.println("Faktisk basyta: " + resultSurfaceArea);
         assertEquals(expsurfaceArea, resultSurfaceArea, 0.0);
     }
 }
