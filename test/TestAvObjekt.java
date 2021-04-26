@@ -68,7 +68,7 @@ public class TestAvObjekt {
      */
     @Test
     public void testCirkel1() {
-        System.out.println("\nTestar cirkel med radie 3");
+        System.out.println("\nTestar cirkel med radie 1");
         cirkel = new Cirkel(1);
         double expArea = 3.14;
         System.out.println("Förväntad area: " + expArea);
@@ -117,6 +117,26 @@ public class TestAvObjekt {
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 9;
+        System.out.println("Förväntad omkrets: " + expOmk);
+        double resultOmk = triangel.omkrets();
+        System.out.println("Faktisk omkrets: " + resultOmk);
+        assertEquals(expOmk, resultOmk, 0.0);
+    }
+    
+    /**
+     * Testar metoder för area och omkrets på en triangel med basen 3 och höjden 2, samt övriga två sidor 3 och 4-
+     */
+    @Test
+    public void testTriangel1() {
+        System.out.println("\nTestar en triangel med basen 4 och höjden 3 och där övriga sidor är 5 respektive 3");
+        triangel = new Triangel(4, 3, 5, 3);
+        double expArea = 6;
+        System.out.println("Förväntad area: " + expArea);
+        double resultArea = triangel.area();
+        System.out.println("Faktiskt area: " + resultArea);        
+        assertEquals(expArea, resultArea, 0.0);
+        
+        double expOmk = 12;
         System.out.println("Förväntad omkrets: " + expOmk);
         double resultOmk = triangel.omkrets();
         System.out.println("Faktisk omkrets: " + resultOmk);
