@@ -20,8 +20,8 @@ Från:
  
 `.\nbcproject\`
 
-För att kunna köra JBehave tester behövs andra bibliotek som inte täcks av JDK 15.
-Importera följande .JAR filer till projektets 'Test Libraries' i din IDE:
+
+Importera följande .JAR filer från till projektets 'Test Libraries' i din IDE:
  
 
 ```-commons.io.2.8.0.jar
