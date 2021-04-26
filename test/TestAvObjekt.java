@@ -24,24 +24,7 @@ public class TestAvObjekt {
     Kon kon;
     
     
-    public TestAvObjekt() {
-    }
     
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
     /**
      * Testar metoder för area och omkrets på en cirkel med radie 3.
