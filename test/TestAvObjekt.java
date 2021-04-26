@@ -53,7 +53,7 @@ public class TestAvObjekt {
         double expArea = 28.26;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = cirkel.area();
-        System.out.println("Faktiskt area: " + resultArea);
+        System.out.println("Faktisk area: " + resultArea);
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 18.84;
@@ -73,7 +73,7 @@ public class TestAvObjekt {
         double expArea = 3.14;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = cirkel.area();
-        System.out.println("Faktiskt area: " + resultArea);        
+        System.out.println("Faktisk area: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 6.28;
@@ -93,7 +93,7 @@ public class TestAvObjekt {
         double expArea = 12.56;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = cirkel.area();
-        System.out.println("Faktiskt area: " + resultArea);        
+        System.out.println("Faktisk area: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 12.56;
@@ -113,7 +113,7 @@ public class TestAvObjekt {
         double expArea = 3;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = triangel.area();
-        System.out.println("Faktiskt area: " + resultArea);        
+        System.out.println("Faktisk area: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 9;
@@ -133,7 +133,7 @@ public class TestAvObjekt {
         double expArea = 6;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = triangel.area();
-        System.out.println("Faktiskt area: " + resultArea);        
+        System.out.println("Faktisk area: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 12;
@@ -153,7 +153,7 @@ public class TestAvObjekt {
         double expArea = 6;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = rektangel.area();
-        System.out.println("Faktiskt area: " + resultArea);        
+        System.out.println("Faktisk area: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 10;
@@ -172,7 +172,7 @@ public class TestAvObjekt {
         double expArea = 15;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = rektangel.area();
-        System.out.println("Faktiskt area: " + resultArea);        
+        System.out.println("Faktisk area: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 16;
@@ -191,7 +191,7 @@ public class TestAvObjekt {
         double expArea = 24;
         System.out.println("Förväntad area: " + expArea);
         double resultArea = paralellogram.area();
-        System.out.println("Faktiskt area: " + resultArea);        
+        System.out.println("Faktisk area: " + resultArea);        
         assertEquals(expArea, resultArea, 0.0);
         
         double expOmk = 20;
