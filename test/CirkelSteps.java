@@ -21,46 +21,43 @@ public class CirkelSteps {
 
    
    
-   private Cirkel cirkel;
-   private double expectedArea;
-   private double actualArea;
-   private double expectedOmkrets;
-   private double actualOmkrets;
-   
-   //public double omkretsen;
-   
-   
-   @BeforeScenario
-   public void utskrift(){
-       System.out.println("Nytt Scenario");
-   }
-   @AfterScenario
-   public void utskriftEfter() {
-       System.out.println("Avslutar test");
-   }
+    private Cirkel cirkel;
+    private double expectedArea;
+    private double actualArea;
+    private double expectedOmkrets;
+    private double actualOmkrets;
     
-   @Given("en cirkel")
-   public void testObjekt(){
+    @Given("en cirkel med radius $radius")
+    public void testObjekt(double radius){
        System.out.println("Test av cirkel");
-   }
+       cirkel = new Cirkel(radius);
+    }
 
    
-    @When("cirkeln har radius $radius")
-    public void radius(double radius){
-        this.cirkel = new Cirkel(radius);
+    @When("cirkeln räknar ut area")
+    public void testaArea(){
         actualArea = cirkel.area();
-        actualOmkrets = cirkel.omkrets();
-        System.out.println("När cirkeln har radie " + radius);
+        System.out.println("När cirkeln har radie " + cirkel.radius);
     }
-             
-   @Then("arean borde vara $area och omkretsen $omkrets")
-   public void omkretsenStämmer(double area, double omkrets){
+    
+    @Then("borde arean vara $area")
+    public void areanStämmer(double area){
         expectedArea = area;
-        expectedOmkrets = omkrets;
         assertEquals(expectedArea, actualArea, 0.1);
-        assertEquals(expectedOmkrets, actualOmkrets, 0.1);
-        System.out.println("Då borde arean vara " + actualArea + " och omkretsen " + actualOmkrets);
-        //double expResult = omkretsen;
-        //assertEquals(expected, );
+        System.out.println("Då borde arean vara " + actualArea);
     }
-}   
+    
+    @When("cirkeln räknar ut omkrets")
+    public void testOmkrets(){
+        actualOmkrets = cirkel.omkrets();
+        System.out.println("När cirkeln har radie " + cirkel.radius);
+    }
+    
+    @Then("borde omkretsen vara $omkrets")
+    public void omkretsenStämmer(double omkrets) {
+        expectedOmkrets = omkrets;
+        assertEquals(expectedOmkrets, actualOmkrets, 0.1);
+        System.out.println("Då borde omkretsen vara" + actualOmkrets);
+    }
+}
+

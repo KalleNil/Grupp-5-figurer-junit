@@ -1,9 +1,21 @@
-Given en cirkel
-When cirkeln har radius 3
-Then arean borde vara 28.26 och omkretsen 18.84
+Narrative: Genom att ange ett värde som representerar radius kan vi enkelt testa vår logik
 
-When cirkeln har radius 1
-Then arean borde vara 3.14 och omkretsen 6.28
+Scenario: Testa cirklar med JBehave
+Given en cirkel med radius 3
+When cirkeln räknar ut area
+Then borde arean vara 28.26
+When cirkeln räknar ut omkretsen
+Then borde omkretsen vara 18.84
 
-When cirkeln har radius 2
-Then arean borde vara 12.57 och omkretsen 12.57
+Given en cirkel med radius 2
+When cirkeln räknar ut area
+Then borde arean vara 12.57
+When cirkeln räknar ut omkretsen
+Then borde omkretsen vara 12.57
+
+Given en cirkel med radius 1
+When cirkeln räknar ut area
+Then borde arean vara 3.14
+When cirkeln räknar ut omkretsen
+Then borde omkretsen vara 6.28
+
